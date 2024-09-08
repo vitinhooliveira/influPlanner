@@ -1,0 +1,47 @@
+<div class="loginPage">
+  <div class="textoPrincipal">
+    <h2 class="textInflu">Acesse sua conta no InfluPlanner</h2>
+  </div>
+  <div class="circle">
+    <img src="../../assets/fotoVictor.jpeg" alt="Foto do login" width="300px" />
+  </div>
+  <form [formGroup]="formulario">
+    <mat-form-field class="example-full-width login">
+      <mat-label>Email</mat-label>
+      <input
+        type="email"
+        matInput
+        formControlName="emailForm"
+        placeholder="Informe seu e-mail"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width login">
+      <mat-label>Senha</mat-label>
+      <input
+        type="password"
+        matInput
+        formControlName="senhaForm"
+        placeholder="Digite sua senha"
+      />
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="hide = !hide"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide"
+      >
+        <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+      </button>
+    </mat-form-field>
+    <button
+      mat-raised-button
+      [disabled]="!formulario.valid"
+      class="btnAcesso"
+      color="primary"
+      (click)="redirectHome()"
+    >
+      Acessar sua conta
+    </button>
+  </form>
+  <div class="alert alert-danger" *ngIf="msgAlerta" role="alert">Email ou Senha incorreta</div>
+</div>

@@ -1,0 +1,61 @@
+.loginPage {
+  background-color: #eaeaea;
+  height: 100%;
+
+  .textoPrincipal {
+    padding: 3% 0 3% 0;
+    margin: 0 auto;
+    text-align: center;
+    h2 {
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: black;
+      background-image: linear-gradient(
+      45deg,
+        rgb(0, 0, 0),
+        rgb(64, 224, 208),
+        rgb(243, 114, 137),
+        rgb(235, 20, 106)
+      );
+    }
+  }
+
+  .circle {
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .circle img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .login {
+    padding-top: 2%;
+    display: block;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .btnAcesso {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+  }
+
+  .alert{
+    text-align: center;
+    width: 15%;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,82 @@
+.menu {
+  max-width: 100%;
+  overflow: hidden;
+
+  .divs {
+    display: flex; /* Usa Flexbox para alinhar os itens */
+    justify-content: space-between; /* Espaço igual entre as divs (opcional) */
+    margin-top: 2%;
+    background-color: #4d789f;
+
+    div {
+      color: white;
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .divs {
+      height: 6.2rem;
+    }
+    .img {
+      img {
+        background-color: #aaa;
+        border-radius: 50%;
+        width: 7%;
+        height: 13%;
+        overflow: hidden;
+        margin: 1.3% 0 0% 1%;
+        position: absolute;
+        left: 0;
+        top: 2.2%;
+      }
+    }
+    .name {
+      position: absolute;
+      left: 10%;
+      top: 8%;
+      p{
+        margin: -10% 25% 0 0;
+      }
+    }
+    .menu {
+      right: 0; /* Gruda a div no lado direito */
+      top: 0; /* Alinha ao topo do elemento pai */
+      color: white;
+      padding: 1.7% 3% 0 0;
+    }
+  }
+  @media (max-width: 1023px) {
+    .divs {
+      height: 5rem;
+    }
+    .img {
+      img {
+        background-color: #aaa;
+        border-radius: 50%;
+        width: 15%;
+        height: 8%;
+        overflow: hidden;
+        margin: 1.5% 0 0% 2%;
+        position: absolute;
+        left: 0;
+        top: 1%;
+      }
+    }
+    .name {
+      position: absolute;
+      left: 16%;
+      top: 3%;
+      width: 35%;
+      p{
+        margin: -10% 22% 0 0;
+      }
+    }
+    .menu {
+      right: 0; /* Gruda a div no lado direito */
+      top: 0; /* Alinha ao topo do elemento pai */
+      color: white;
+      padding: 3% 3% 0 0;
+    }
+  }
+}

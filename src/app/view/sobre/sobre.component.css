@@ -1,0 +1,46 @@
+.sobreEmpresa {
+  text-align: center;
+  h1,
+  h2 {
+    font-family: "Nerko One", cursive;
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+  }
+}
+
+.nossaEquipe {
+  text-align: center;
+  padding-top: 3%;
+  .imgs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    .imgGuilherme {
+      img {
+        background-color: #aaa;
+        width: 127px;
+        border-radius: 5%;
+        /* margin: 1.5% 0% 0% 2%; */
+      }
+      position: absolute;
+      right: 35%;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .imgVictor {
+      img {
+        background-color: #aaa;
+        border-radius: 5%;
+        width: 100px;
+        /* height: 133px; */
+        /* margin: 1.5% 0 0% 2%; */
+      }
+      left: 35%;
+      position: absolute;
+      overflow: hidden;
+    }
+  }
+}

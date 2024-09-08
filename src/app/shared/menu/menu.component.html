@@ -1,0 +1,42 @@
+<div class="menu">
+  <div class="divs">
+    <div class="img">
+      <img
+        src="../../assets/fotoVictor.jpeg"
+        alt="Foto do login"
+        width="100px"
+      />
+    </div>
+    <div class="name">
+      <h4>Andrea Sanchs</h4>
+      <p>Nutricionista</p>
+    </div>
+    <div class="menu">
+      <button
+        mat-icon-button
+        [matMenuTriggerFor]="menu"
+        aria-label="Example icon-button with a menu"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="getHome()">
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </button>
+        <button mat-menu-item (click)="getSomos()">
+          <mat-icon>import_contacts</mat-icon>
+          <span>Quem somos</span>
+        </button>
+        <button mat-menu-item (click)="getBlog()">
+          <mat-icon>newspaper</mat-icon>
+          <span>Blog</span>
+        </button>
+        <button mat-menu-item (click)="getLogin()">
+          <mat-icon>login</mat-icon>
+          <span>Cadastro</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+</div>
