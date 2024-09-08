@@ -10,37 +10,76 @@
   }
 }
 
-.nossaEquipe {
-  text-align: center;
-  padding-top: 3%;
-  .imgs {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2%;
-    .imgGuilherme {
-      img {
-        background-color: #aaa;
-        width: 127px;
-        border-radius: 5%;
-        /* margin: 1.5% 0% 0% 2%; */
+@media (min-width: 1024px) {
+  .nossaEquipe {
+    text-align: center;
+    padding-top: 3%;
+    .imgs {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2%;
+      .imgGuilherme {
+        img {
+          background-color: #aaa;
+          width: 127px;
+          border-radius: 5%;
+          /* margin: 1.5% 0% 0% 2%; */
+        }
+        position: absolute;
+        right: 35%;
+        overflow: hidden;
+        text-align: center;
       }
-      position: absolute;
-      right: 35%;
-      overflow: hidden;
-      text-align: center;
-    }
 
-    .imgVictor {
-      img {
-        background-color: #aaa;
-        border-radius: 5%;
-        width: 100px;
-        /* height: 133px; */
-        /* margin: 1.5% 0 0% 2%; */
+      .imgVictor {
+        img {
+          background-color: #aaa;
+          border-radius: 5%;
+          width: 100px;
+          /* height: 133px; */
+          /* margin: 1.5% 0 0% 2%; */
+        }
+        left: 35%;
+        position: absolute;
+        overflow: hidden;
       }
-      left: 35%;
-      position: absolute;
-      overflow: hidden;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .nossaEquipe {
+    text-align: center;
+    padding-top: 3%;
+    .imgs {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2%;
+      .imgGuilherme {
+        img {
+          background-color: #aaa;
+          width: 127px;
+          border-radius: 5%;
+          margin: 1.5% 0% 0% 2%;
+        }
+        position: absolute;
+        right: 5%;
+        overflow: hidden;
+        text-align: center;
+      }
+
+      .imgVictor {
+        img {
+          background-color: #aaa;
+          border-radius: 5%;
+          width: 100px;
+          height: 133px;
+          margin: 1.5% 0 0% 2%;
+        }
+        left: 7%;
+        position: absolute;
+        overflow: hidden;
+      }
     }
   }
 }
