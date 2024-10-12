@@ -1,5 +1,17 @@
 {
   "login": [
-    {"email": "victor.oliveira@influplanner.com.br", "senha":"C@vi19"}
+    {
+      "email": "victor.oliveira@influplanner.com.br",
+      "senha": "C@vi19",
+      "profissao": "Ceo-fundador",
+      "nome": "Victor Olievira",
+      "foto":""
+    },
+    {
+      "email": "guilherme.camargo@influplanner.com.br",
+      "senha": "K@gui123",
+      "profissao": "Ceo-fundador",
+      "nome": "Guilherme Camargo"
+    }
   ]
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiTestService } from 'src/apis/api-test.service';
 
 @Component({
   selector: 'app-sobre',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SobreComponent implements OnInit {
 
-  constructor() { }
+  constructor(public apiTestService:ApiTestService) { }
 
   ngOnInit() {
+  }
+
+  teste(){
+    this.apiTestService.apiTestInflu().subscribe((res:any)=>{
+      console.log('TESTTTEE', res)
+    })
   }
 
 }
