@@ -3,7 +3,7 @@
     <h2 class="textInflu">Acesse sua conta no InfluPlanner</h2>
   </div>
   <div class="circle">
-    <img src="../../assets/fotoVictor.jpeg" alt="Foto do login" width="300px" />
+    <img src="../../assets/login.png" alt="Foto do login" width="300px" />
   </div>
   <form [formGroup]="formulario">
     <mat-form-field class="example-full-width login">
@@ -14,6 +14,7 @@
         formControlName="emailForm"
         placeholder="Informe seu e-mail"
       />
+      <mat-error *ngIf="formulario.invalid">{{ getErrorMessageLogin() }}</mat-error>
     </mat-form-field>
     <mat-form-field class="example-full-width login">
       <mat-label>Senha</mat-label>
@@ -23,6 +24,7 @@
         formControlName="senhaForm"
         placeholder="Digite sua senha"
       />
+      <mat-error *ngIf="formulario.invalid">{{ getErrorMessageSenha() }}</mat-error>
       <button
         mat-icon-button
         matSuffix
@@ -43,5 +45,7 @@
       Acessar sua conta
     </button>
   </form>
-  <div class="alert alert-danger" *ngIf="msgAlerta" role="alert">Email ou Senha incorreta</div>
+  <div class="alert alert-danger" *ngIf="msgAlerta" role="alert">
+    Email ou Senha incorreta
+  </div>
 </div>

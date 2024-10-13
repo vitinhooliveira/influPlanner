@@ -6,15 +6,14 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class ApiTestService {
-
   private edgeConfigUrl = 'https://api-influ-planner.vercel.app';
 
   constructor(private http: HttpClient) {}
 
-  apiTestInflu():Observable<any> {
+  apiLoginApp(login: string, senha: string): Observable<any> {
     return this.http.post(`${this.edgeConfigUrl}/pessoas-cadastro`, {
-      login:'victor@gmail.com',
-      senha:"MTIzNDU="
+      login: login,
+      senha: senha,
     });
   }
 }
