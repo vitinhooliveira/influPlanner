@@ -1,55 +1,103 @@
 <div>
   <app-menu></app-menu>
   <div class="sobreEmpresa">
-    <h1>O que somos</h1>
-    <p>
-      Somos uma empresa dedicada a transformar os sonhos de nossos clientes em
-      realidade, combinando tecnologia de ponta com análises estatísticas
-      avançadas. Oferecemos soluções acessíveis e transparentes, projetadas
-      especialmente para pequenos e médios influenciadores e empresas, para
-      impulsionar seu sucesso e crescimento.
-    </p>
-    <h2>Nossa Missão</h2>
-    <p>
-      Empoderar pequenos e médios influenciadores e empresas com insights de
-      dados valiosos, proporcionando ferramentas acessíveis que potencializem
-      seu desempenho e engajamento nas redes sociais.
-    </p>
-    <h2>Nossa visão</h2>
-    <p>
-      Ser reconhecida globalmente como uma empresa inovadora no setor de
-      tecnologia, dedicada a capacitar pequenos e médios influenciadores e
-      empresas, oferecendo soluções acessíveis e eficientes que impulsionem o
-      crescimento e a conectividade para todos.
-    </p>
-    <h2>Nossa Valores</h2>
-    <p>
-      Nosso compromisso é entregar excelência em cada interação com nossos
-      clientes, proporcionando experiências únicas e transformadoras.
-      Valorizamos a integração perfeita entre tecnologia e inteligência
-      artificial (IA) para oferecer soluções inovadoras e impactantes.
-    </p>
+    <div class="block text-center p-4 border-round mb-3">
+      <h1 class="text-5xl font-bold">O que somos</h1>
+      <p>
+        Somos uma empresa dedicada a transformar os sonhos de nossos clientes em
+        realidade, combinando tecnologia de ponta com análises estatísticas
+        avançadas. Oferecemos soluções acessíveis e transparentes, projetadas
+        especialmente para pequenos e médios influenciadores e empresas, para
+        impulsionar seu sucesso e crescimento.
+      </p>
+    </div>
+    <div class="block text-center p-4 border-round mb-3">
+      <h2 class="text-3xl font-bold">Nossa Missão</h2>
+      <p>
+        Empoderar pequenos e médios influenciadores e empresas com insights de
+        dados valiosos, proporcionando ferramentas acessíveis que potencializem
+        seu desempenho e engajamento nas redes sociais.
+      </p>
+    </div>
+    <div class="block text-center p-4 border-round mb-3">
+      <h2 class="text-3xl font-bold">Nossa visão</h2>
+      <p>
+        Ser reconhecida globalmente como uma empresa inovadora no setor de
+        tecnologia, dedicada a capacitar pequenos e médios influenciadores e
+        empresas, oferecendo soluções acessíveis e eficientes que impulsionem o
+        crescimento e a conectividade para todos.
+      </p>
+    </div>
+    <div class="block text-center p-4 border-round mb-3">
+      <h2 class="text-3xl font-bold">Nossa Valores</h2>
+      <p>
+        Nosso compromisso é entregar excelência em cada interação com nossos
+        clientes, proporcionando experiências únicas e transformadoras.
+        Valorizamos a integração perfeita entre tecnologia e inteligência
+        artificial (IA) para oferecer soluções inovadoras e impactantes.
+      </p>
+    </div>
   </div>
-  <div class="nossaEquipe">
-    <h1>Nossa Equipe</h1>
-    <div class="imgs">
-      <div class="imgVictor">
+
+  <!-- <div class="block text-center p-4 border-round mb-3">
+    <h2 class="text-3xl font-bold">Nossa Equipe</h2>
+    <div class="card-container">
+      <div class="inline-block w-4rem h-4rem text-center p-2 border-round">
         <img
           src="../../../assets/fotoVictor.jpeg"
           alt="Foto do login"
           width="100px"
         />
-        <h2>Victor Oliveira</h2>
-        <p>Co-Founder & Co-CEO</p>
       </div>
-      <div class="imgGuilherme">
+      <div
+        class="inline-block w-4rem h-4rem font-bold text-center p-6 border-round mx-4"
+      >
         <img
           src="../../../assets/foto Gui.png"
           alt="Foto do login"
           width="100px"
         />
-        <h2>Guilherme Camargo</h2>
-        <p>Co-Founder & Co-CEO</p>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="block text-center p-4 border-round mb-3">
+    <div class="card-container">
+      <div class="inline-block w-4rem h-4rem text-center p-2 border-round">
+        <h2 class="block font-bold text-center equipeNome">Victor Oliveira</h2>
+        <p class="">Co-Founder & Co-CEO</p>
+      </div>
+      <div class="inline-block w-4rem h-4rem text-center p-6 border-round mx-4">
+        <h2 class="block font-bold text-center equipeNome">Guilherme Camargo</h2>
+        <p class="equipe">Co-Founder & Co-CEO</p>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="block text-center p-4 border-round mb-3">
+    <h2 class="text-3xl font-bold">Nossa Equipe</h2>
+    <div class="card-container">
+      <div
+        class="inline-block w-50rem h-4rem text-center p-2 border-round corouselEquipe"
+      >
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../../../assets/fotoVictor.jpeg" alt="Foto do login" />
+              <h2>Victor Oliveira</h2>
+              <p>Co-Founder & Co-CEO</p>
+            </div>
+            <div class="carousel-item">
+              <img src="../../../assets/foto Gui.png" alt="Foto do login" />
+              <h2>Guilherme Camargo</h2>
+              <p>Co-Founder & Co-CEO</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

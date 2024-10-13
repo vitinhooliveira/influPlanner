@@ -1,42 +1,59 @@
-<div class="menu">
-  <div class="divs">
-    <div class="img">
-      <img
-        src="../../assets/fotoVictor.jpeg"
-        alt="Foto do login"
-        width="100px"
-      />
-    </div>
-    <div class="name">
-      <h4>Andrea Sanchs</h4>
-      <p>Nutricionista</p>
-    </div>
-    <div class="menu">
-      <button
-        mat-icon-button
-        [matMenuTriggerFor]="menu"
-        aria-label="Example icon-button with a menu"
+<div class="overflow-hidden" style="padding-top: 10px; height: 120px">
+  <div
+    class="relative bg-cyan-800 border-round border-1 border-primary-500"
+    style="height: 150px"
+  >
+    <div class="flex flex-row flex-wrap">
+      <div
+        class="flex align-items-center justify-content-center w-4rem h-4rem bg-cyan-800 font-bold border-round m-2"
       >
-        <mat-icon>menu</mat-icon>
-      </button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item (click)="getHome()">
-          <mat-icon>home</mat-icon>
-          <span>Home</span>
+        <img
+          src="../../assets/fotoVictor.jpeg"
+          alt="Foto do login"
+          width="100px"
+        />
+      </div>
+      <div class="flex flex-column text-0 nomes">
+        <div
+          class="flex align-items-center justify-content-center h-4rem bg-cyan-800 font-bold border-round m-2"
+        >
+          <h4 cls>Andrea Sanchs</h4>
+        </div>
+        <div
+          class="flex align-items-center justify-content-center h-4rem bg-cyan-800 font-bold border-round m-2 cargo"
+        >
+          <p>Nutricionista</p>
+        </div>
+      </div>
+      <div
+        class="absolute text-0 top-0 right-0 bg-cyan-800 font-bold flex align-items-center justify-content-center w-4rem h-4rem border-round"
+      >
+        <button
+          mat-icon-button
+          [matMenuTriggerFor]="menu"
+          aria-label="Example icon-button with a menu"
+        >
+          <mat-icon>menu</mat-icon>
         </button>
-        <button mat-menu-item (click)="getSomos()">
-          <mat-icon>import_contacts</mat-icon>
-          <span>Quem somos</span>
-        </button>
-        <button mat-menu-item (click)="getBlog()">
-          <mat-icon>newspaper</mat-icon>
-          <span>Blog</span>
-        </button>
-        <button mat-menu-item (click)="getLogin()">
-          <mat-icon>login</mat-icon>
-          <span>Cadastro</span>
-        </button>
-      </mat-menu>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="getHome()">
+            <mat-icon>home</mat-icon>
+            <span>Home</span>
+          </button>
+          <button mat-menu-item (click)="getSomos()">
+            <mat-icon>import_contacts</mat-icon>
+            <span>Quem somos</span>
+          </button>
+          <button mat-menu-item (click)="getBlog()">
+            <mat-icon>newspaper</mat-icon>
+            <span>Blog</span>
+          </button>
+          <button mat-menu-item (click)="getLogin()">
+            <mat-icon>login</mat-icon>
+            <span>Cadastro</span>
+          </button>
+        </mat-menu>
+      </div>
     </div>
   </div>
 </div>

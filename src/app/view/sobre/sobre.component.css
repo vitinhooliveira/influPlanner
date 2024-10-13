@@ -1,85 +1,15 @@
-.sobreEmpresa {
-  text-align: center;
-  h1,
-  h2 {
-    font-family: "Nerko One", cursive;
-  }
-  p {
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-  }
+.equipeNome {
+  position: relative;
+  bottom: 70px;
+  width: 200px;
+  right: 50px;
+  /* transform:; translate(-50%, -50%); */
 }
 
-@media (min-width: 1024px) {
-  .nossaEquipe {
-    text-align: center;
-    padding-top: 3%;
-    .imgs {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 2%;
-      .imgGuilherme {
-        img {
-          background-color: #aaa;
-          width: 127px;
-          border-radius: 5%;
-          /* margin: 1.5% 0% 0% 2%; */
-        }
-        position: absolute;
-        right: 35%;
-        overflow: hidden;
-        text-align: center;
-      }
+.corouselEquipe {
 
-      .imgVictor {
-        img {
-          background-color: #aaa;
-          border-radius: 5%;
-          width: 100px;
-          /* height: 133px; */
-          /* margin: 1.5% 0 0% 2%; */
-        }
-        left: 35%;
-        position: absolute;
-        overflow: hidden;
-      }
-    }
-  }
-}
-
-@media (max-width: 1023px) {
-  .nossaEquipe {
-    text-align: center;
-    padding-top: 3%;
-    .imgs {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 2%;
-      .imgGuilherme {
-        img {
-          background-color: #aaa;
-          width: 127px;
-          border-radius: 5%;
-          margin: 1.5% 0% 0% 2%;
-        }
-        position: absolute;
-        right: 5%;
-        overflow: hidden;
-        text-align: center;
-      }
-
-      .imgVictor {
-        img {
-          background-color: #aaa;
-          border-radius: 5%;
-          width: 100px;
-          height: 133px;
-          margin: 1.5% 0 0% 2%;
-        }
-        left: 7%;
-        position: absolute;
-        overflow: hidden;
-      }
-    }
+  img{
+    width: 170px;
+    height: 200px;
   }
 }

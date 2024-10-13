@@ -7,11 +7,14 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApiTestService {
 
-  private edgeConfigUrl = 'localhost:3000/welcome'; // Substitua com a URL da sua configuração
+  private edgeConfigUrl = 'https://api-influ-planner.vercel.app';
 
   constructor(private http: HttpClient) {}
 
   apiTestInflu():Observable<any> {
-    return this.http.get(this.edgeConfigUrl);
+    return this.http.post(`${this.edgeConfigUrl}/pessoas-cadastro`, {
+      login:'victor@gmail.com',
+      senha:"MTIzNDU="
+    });
   }
 }

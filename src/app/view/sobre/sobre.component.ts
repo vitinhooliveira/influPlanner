@@ -11,9 +11,11 @@ export class SobreComponent implements OnInit {
   constructor(public apiTestService:ApiTestService) { }
 
   ngOnInit() {
+    this.teste()
   }
 
   teste(){
+    console.log('CAIU AQUI')
     this.apiTestService.apiTestInflu().subscribe((res:any)=>{
       console.log('TESTTTEE', res)
     })
